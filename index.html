@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Configuration Form</title>
+  <style>
+    .submit-button {
+      background-color: blue;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <form method="post" action="process.php">
+    <label for="protocol">Protocol:</label>
+    <select name="protocol" id="protocol">
+      <option value="vmess">VMess</option>
+      <option value="vless">VLESS</option>
+    </select>
+    <br>
+    <label for="config">Configuration:</label>
+    <textarea name="config" id="config" rows="5" cols="40" required></textarea>
+    <br>
+    <input type="submit" value="Submit" class="submit-button">
+  </form>
+</body>
+</html>
